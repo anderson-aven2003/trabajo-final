@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: 'Anton', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html{
+    background-color: #262626;
+} */
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #F9EC10;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background-image: url('/img/image-6.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #F9EC10;
+}
+
+nav {
+    width: 100%;
+    box-shadow: rgba(38, 57, 77) 0px 20px 30px -10px;
+    position: sticky;
+    top: 0;
+    background: rgba(38, 38, 38, 1);
+    ;
+    animation: adjust-nav linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+}
+
+@keyframes adjust-nav {
+    to {
+        box-shadow: rgba(38, 57, 77) 0px 20px 30px -10px;
+        background-color: transparent;
+    }
+}
+
+#ul-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mini-titulo {
+    font-family: 'Anton', sans-serif;
+    color: #F1EFEF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#titulo-header {
+    font-size: 6rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    color: #F1EFEF;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+#primera-caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 480px;
+    background-image: url('/svg/fondo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #F9EC10;
+}
+
+#personaje1 {
+    height: 450px;
+}
+
+#titulo-cajita1 {
+    font-family: 'Anton', sans-serif;
+    color: #FFCD4B;
+}
+
+#parrafo-cajita1 {
+    width: 400px;
+    color: #F1EFEF;
+}
+
+#redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+}
+
+.cajita1-fotos-F {
+    /* width: 300px; */
+    width: 45%;
+    height: 150px;
+    border: 1px solid #F9EC10;
+}
+
+#segunda-caja {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 600px;
+    background-image: url('/svg/fondo2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contenedor-cards {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+
+
+#card1 {
+    width: 20.7%;
+    /* width: 250px; */
+    height: 210px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 4px rgb(255, 165, 0);
+    padding-left: 5px;
+    border: 2px solid rgb(255, 165, 0);
+}
+
+#titulo-card1 {
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    color: #F9EC10;
+}
+
+#ul-card1 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#ul-card1 a {
+    color: #F1EFEF;
+    text-decoration: none;
+}
+
+#card2 {
+    position: relative;
+    width: 16.6%;
+    /* width: 200px; */
+    height: 230px;
+    background-color: #F9EC10;
+    box-shadow: 0px 0px 10px 4px rgb(255, 165, 0);
+    border: 2px solid rgb(255, 165, 0);
+}
+
+#card2-img {
+    position: relative;
+    bottom: 78%;
+    right: 10%;
+    height: 450px;
+}
+
+#card3 {
+    width: 20.7%;
+    /* width: 250px; */
+    height: 250px;
+    padding-left: 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 4px rgb(255, 165, 0);
+    border: 2px solid rgb(255, 165, 0);
+}
+
+#ul-card3 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+#titulo-card3 {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: #F9EC10;
+    width: 100%;
+}
+
+#ul-card3 a {
+    color: #F1EFEF;
+    text-decoration: none;
+    width: 100%;
+}
+
+#caja-descargas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 140px;
+    color: #F1EFEF;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+#titulo-descarga {
+    text-decoration: underline #F9EC10;
+}
+
+#card-link {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    /* width: 500px; */
+}
+
+.a-descarga {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    height: 100px;
+    border-radius: 15px;
+    border: 1.5px solid #F9EC10;
+    text-decoration: none;
+    color: #F1EFEF;
+}
+
+.a-descarga img {
+    width: 80px;
+}
+
+.a-descarga:hover {
+    box-shadow: 0px 0px 10px 4px rgb(255, 165, 0);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #F9EC10;
+    border-top: 2px solid #F9EC10;
+    background-color: #262626;
+}
+
+footer img {
+    width: 300px;
+}
+
+
+@media  (max-width: 925px){
+    /* movil de 320px para abajo */
+
+    header{
+        height: 350px;
+    }
+
+    #titulo-header{
+        font-size: 4rem;
+    }
+
+    #primera-caja {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 350px;
+    }
+    #titulo-cajita1 {
+        font-size: 1rem;
+    }
+    #personaje1 {
+        width: auto;
+        height: 200px;
+    }
+    #parrafo-cajita1 {
+        width: 150px;
+        height: 110px;
+        font-size: 10px;
+        color:#F1EFEF;
+        text-align:start;
+    }
+    #redes-sociales img {
+        width: 15px;
+    }
+
+    #cajita1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cajita1-fotos-F {
+        width: 48%;
+        height: 100px;
+    }
+
+    #segunda-caja{
+        height: 550px;
+    }
+
+    #contenedor-cards{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    #card1{
+        width: 30%;
+        height: 100%;
+    }
+
+    #titulo-card1{
+        font-size: 15px;
+    }
+
+    #ul-card1{
+        height: 100%;
+        gap: 0;
+    }
+
+    #ul-card1 a{
+        font-size: 15px;
+    }
+
+    #card2{
+        width: 30%;
+        height:25%;
+        background-image: url('/icon/icono.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #card2 img{
+        display: none;
+        height: 300px;
+        bottom: 50%;
+        right: 50%;
+    }
+
+    #img-movil{
+        z-index: 1;
+        height: 300px;
+        bottom: 50%;
+        right: 50%;
+    }
+
+    #card3{
+        width: 30%;
+        height: 100%;
+    }
+
+    #titulo-card3{
+        font-size: 14px;
+    }
+
+    #caja-descargas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #titulo-descarga{
+        font-size: 1.5rem;
+    }
+
+    #card-link{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .a-descarga{
+        width: 45%;
+        height: 50px;
+    }
+
+    .a-descarga img{
+        width: 30px;
+    }
+
+    #parrafo-descarga1{
+        font-size: 10px;
+    }
+
+    #parrafo-descarga2{
+        font-size: 10px;
+    }
+
+    footer img {
+        width: 150px;
+    }
+
+}
+
+@media (min-width: 1850px){
+    #personaje1{
+        height: 220px;
+    }
+
+    #cajita1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cajita1-fotos{
+        width: 100%;
+    }
+
+    .cajita1-fotos-F{
+        width: 45%;
+        height: 80px;
+    }
+
+    #titulo-cajita1{
+        font-size: 22px;
+        width: 140px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #parrafo-cajita1{
+        font-size: 10px;
+        width: 140px;
+    }
+}
+
+/* 1235 */
+
+
+/* 1135 */
