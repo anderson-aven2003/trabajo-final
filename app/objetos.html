@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .blur7 {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            background-image: url('/svg/fondo2.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+
+        #caja-blur-icon-titulo {
+            padding-top: 2px;
+        }
+
+        #caja-blur-icon-titulo img {
+            cursor: pointer;
+        }
+
+        #titulo-objetos {
+            color: #F9EC10;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #caja-objetos-7 {
+            display: grid;
+            /* grid-template-columns: auto  auto auto auto auto auto; */
+            grid-template-columns: repeat(auto-fit,
+                    minmax(200px, 1fr));
+            gap: 15px;
+            justify-content: space-around;
+            width: 90%;
+            background: #fafafa10;
+            backdrop-filter: blur(0.4rem);
+            -webkit-backdrop-filter: blur(0.4rem);
+            box-shadow: 0px 0px 10px 4px rgb(255, 165, 0);
+            margin: 18px;
+            border-radius: 10px;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* width: 145px;
+    height: 180px; */
+            margin: 15px;
+            box-shadow: 0px 0px 10px 4px rgb(255, 165, 0);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .subtitulo-objetos {
+            margin: 10px;
+            font-size: 1rem;
+            color: #F1EFEF;
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blur7">
+        <div id="caja-blur-icon-titulo">
+            <img id="close7" src="/svg/close.svg" alt="">
+            <h1 id="titulo-objetos">objetos tacticos</h1>
+        </div>
+        <div id="caja-objetos">
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada1.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada de fragmentación M67</h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada2.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada de humo M18
+                </h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada3.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada aturdidora Z3
+                </h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada4.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada aturdidora M84
+                </h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada5.webp" alt="">
+                <h2 class="subtitulo-objetos">Bomba molotov
+                </h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada6.webp" alt="">
+                <h2 class="subtitulo-objetos">Señuelo X5</h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada7.webp" alt="">
+                <h2 class="subtitulo-objetos">Gas lacrimógeno GLI-F4
+                </h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada8.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada ofensiva GHO 2</h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada9.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada de fragmentación Mk 2</h2>
+            </div>
+            <div class="cards">
+                <img class="objetos-img" src="/iconos-armamentos/granadas/granada10.webp" alt="">
+                <h2 class="subtitulo-objetos">Granada de choque T-13</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
