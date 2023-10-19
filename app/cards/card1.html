@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            height: 100%;
+            width: 100%;
+        }
+
+        .caja-de-cards {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fafafa10;
+            backdrop-filter: blur(0.4rem);
+            -webkit-backdrop-filter: blur(0.4rem);
+            background-image: url('/svg/fondo2.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cards-de-caja {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 40%;
+            height: 40%;
+            text-align: center;
+            border: 2px solid #F1EFEF;
+            box-shadow: 0px 0px 10px 4px rgba(39, 245, 242, 0.29);
+        }
+
+        .cards-de-caja h1{
+                color: #F9EC10;
+                font-size: 2rem;
+            }
+
+            .cards-de-caja p{
+                color: #F1EFEF;
+                font-size: 1rem;
+            }
+
+        @media (max-width: 925px) {
+
+            .cards-de-caja {
+                position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        .cards-de-caja img{
+            width: 200px;
+        }
+
+            .cards-de-caja h1{
+                color: #F9EC10;
+                font-size: 2rem;
+            }
+
+            .cards-de-caja p{
+                color: #F1EFEF;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="caja-de-cards">
+        <div class="cards-de-caja">
+            <img src="/iconos-armamentos/plataformas blindadas/chaleco-b1.webp" alt="">
+            <h1>Aparejo blindado pesado Spartan C</h1>
+            <p>El chaleco antibalas militar de la serie de plataformas blindadas Spartan del 926. Un chaleco antibalas
+                pesado, proporciona la máxima defensa y es adecuado para cualquier tipo de combate.</p>
+        </div>
+    </section>
+</body>
+
+</html>

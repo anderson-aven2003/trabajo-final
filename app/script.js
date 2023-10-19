@@ -1,129 +1,115 @@
 const menu = document.querySelector('.menu');
 const pestañaMenu = document.querySelector('.contenedor-menu');
-
-const botonChalecoB = document.querySelector('#boton-chaleco-b');
-const cajaChalecosB = document.querySelector('.blur1');
-
 const pPrincipal = document.querySelector('#pagina-principal');
-
-const botonDeChaleco = document.querySelector('#boton-chaleco');
-const cajaChaleco = document.querySelector('.blur2');
-
-const botonMascara = document.querySelector('#boton-mascara');
-const cajaMascara = document.querySelector('.blur3');
-
-const botonAudifono = document.querySelector('#boton-audifonos');
-const cajaAudifonos = document.querySelector('.blur4');
-
-const botonArmadura = document.querySelector('#boton-armadura-corporal');
-const cajaCorporales = document.querySelector('.blur5');
-
-const botonCascos = document.querySelector('#boton-cascos');
-const cajaCascos = document.querySelector('.blur6');
-
-const botonGranadas = document.querySelector('#boton-granadas');
-const cajaGranadas = document.querySelector('.blur7');
-
-const close = document.querySelector('.close');
+const botonChalecoB = document.querySelector('#boton-chaleco-b')
+const blur1 = document.querySelector('#blur1');
+const close1 = document.querySelector('.close');
+const botonChaleco = document.querySelector('#boton-chaleco');
+const blur2 = document.querySelector('#blur2');
 const close2 = document.querySelector('#close2');
+const botonMascara = document.querySelector('#boton-mascara');
+const blur3 = document.querySelector('#blur3');
 const close3 = document.querySelector('#close3');
+const botonAudifonos = document.querySelector('#boton-audifonos');
+const blur4 = document.querySelector('#blur4');
 const close4 = document.querySelector('#close4');
+const botonArmaduraCorporal = document.querySelector('#boton-armadura-corporal');
+const blur5 = document.querySelector('#blur5');
 const close5 = document.querySelector('#close5');
+const botonCasco = document.querySelector('#boton-cascos');
+const blur6 = document.querySelector('#blur6');
 const close6 = document.querySelector('#close6');
+const botonGranadas = document.querySelector('#boton-granadas');
+const blur7 = document.querySelector('#blur7');
 const close7 = document.querySelector('#close7');
 
-
 menu.addEventListener('click', pestañaToggle);
-botonChalecoB.addEventListener('click', cajaChalecosBAdd);
-botonDeChaleco.addEventListener('click', chalecosAdd);
-botonMascara.addEventListener('click', mascaraAdd);
-botonAudifono.addEventListener('click', audifonosAdd);
-botonArmadura.addEventListener('click', armadurasAdd);
-botonCascos.addEventListener('click', cascosAdd);
-botonGranadas.addEventListener('click', granadasAdd);
-
-close.addEventListener('click', closeArmamento);
+botonChalecoB.addEventListener('click', abrirChalecoB);
+close1.addEventListener('click', closeChalecoB);
+botonChaleco.addEventListener('click', abrirChaleco);
 close2.addEventListener('click', closeChaleco);
+botonMascara.addEventListener('click', abrirMascara);
 close3.addEventListener('click', closeMascara);
-close4.addEventListener('click', closeAudifono);
-close5.addEventListener('click', closeCorporales);
-close6.addEventListener('click', closeCascos);
+botonAudifonos.addEventListener('click', abrirAudifonos);
+close4.addEventListener('click', closeAudifonos);
+botonArmaduraCorporal.addEventListener('click', abrirArmadaCorporal);
+close5.addEventListener('click', closeArmadaCorporal);
+botonCasco.addEventListener('click', abrirCasco);
+close6.addEventListener('click', closeCasco);
+botonGranadas.addEventListener('click', abrirGranadas);
 close7.addEventListener('click', closeGranadas);
 
-function pestañaToggle(){
+
+function pestañaToggle() {
     pestañaMenu.classList.toggle('inactive');
 }
 
-function cajaChalecosBAdd(){
-    cajaChalecosB.classList.remove('inactive');
+function abrirChalecoB() {
+    blur1.classList.remove('inactive');
     pPrincipal.classList.add('inactive');
 }
 
-function chalecosAdd(){
-    cajaChaleco.classList.remove('inactive');
-    pPrincipal.classList.add('inactive');
-}
-
-function mascaraAdd() {
-    cajaMascara.classList.remove('inactive');
-    pPrincipal.classList.add('inactive');
-}
-
-function audifonosAdd(){
-    cajaAudifonos.classList.remove('inactive');
-    pPrincipal.classList.add('inactive');
-}
-
-function armadurasAdd(){
-    cajaCorporales.classList.remove('inactive');
-    pPrincipal.classList.add('inactive'); 
-}
-
-function cascosAdd(){
-    cajaCascos.classList.remove('inactive');
-    pPrincipal.classList.add('inactive');
-}
-
-function granadasAdd(){
-    cajaGranadas.classList.remove('inactive');
-    pPrincipal.classList.add('inactive');
-}
-
-
-
-
-
-
-function closeArmamento(){
-    cajaChalecosB.classList.add('inactive');
+function closeChalecoB(){
+    blur1.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
 }
+
+function abrirChaleco(){
+    blur2.classList.remove('inactive');
+    pPrincipal.classList.add('inactive');
+}
+
 function closeChaleco(){
-    cajaChaleco.classList.add('inactive');
+    blur2.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
+}
+
+function abrirMascara(){
+    blur3.classList.remove('inactive');
+    pPrincipal.classList.add('inactive');
 }
 
 function closeMascara(){
-    cajaMascara.classList.add('inactive');
+    blur3.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
 }
 
-function closeAudifono(){
-    cajaAudifonos.classList.add('inactive');
+function abrirAudifonos(){
+    blur4.classList.remove('inactive');
+    pPrincipal.classList.add('inactive');
+}
+
+function closeAudifonos(){
+    blur4.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
 }
 
-function closeCorporales(){
-    cajaCorporales.classList.add('inactive');
+function abrirArmadaCorporal(){
+    blur5.classList.remove('inactive');
+    pPrincipal.classList.add('inactive');
+}
+
+function closeArmadaCorporal(){
+    blur5.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
 }
 
-function closeCascos(){
-    cajaCascos.classList.add('inactive');
+function abrirCasco(){
+    blur6.classList.remove('inactive');
+    pPrincipal.classList.add('inactive');
+}
+
+function closeCasco(){
+    blur6.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
+}
+
+function abrirGranadas(){
+    blur7.classList.remove('inactive');
+    pPrincipal.classList.add('inactive');
 }
 
 function closeGranadas(){
-    cajaGranadas.classList.add('inactive');
+    blur7.classList.add('inactive');
     pPrincipal.classList.remove('inactive');
 }
