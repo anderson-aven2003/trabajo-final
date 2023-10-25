@@ -46,57 +46,126 @@
             box-shadow: 0px 0px 10px 4px rgba(39, 245, 242, 0.29);
         }
 
-        .cards-de-caja h1{
-                color: #F9EC10;
-                font-size: 2rem;
-            }
+        .cards-de-caja h1 {
+            color: #F9EC10;
+            font-size: 2rem;
+        }
 
-            .cards-de-caja p{
-                color: #F1EFEF;
-                font-size: 1rem;
-            }
+        .cards-de-caja p {
+            color: #F1EFEF;
+            font-size: 1rem;
+        }
+
+        .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid rgb(217, 217, 217);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 12px;
+}
+
+
+        .menu-toggle .linea {
+            position: relative;
+            width: 60px;
+            height: 5px;
+            background-color: #2e4053;
+            border-radius: 10px;
+            z-index: 1;
+            background-color: #F9EC10;
+        }
+
+        .menu-toggle .linea:nth-child(1) {
+            top: 0;
+            transform: rotate(0);
+            transition: top 0.2s ease, transform 0.4s ease;
+        }
+
+        .menu-toggle .linea:nth-child(2) {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.2s ease;
+        }
+
+        .menu-toggle .linea:nth-child(3) {
+            top: 0;
+            transform: rotate(0);
+            transition: top 0.2s ease, transform 0.4s ease;
+        }
+
+        .menu-toggle.active .linea:nth-child(1) {
+            top: 18px;
+            transform: rotate(45deg);
+        }
+
+        .menu-toggle.active .linea:nth-child(2) {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .menu-toggle.active .linea:nth-child(3) {
+            top: -16px;
+            transform: rotate(-45deg);
+        }
+
 
         @media (max-width: 925px) {
 
             .cards-de-caja {
                 position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            border: 2px solid black;
-        }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                border: 2px solid black;
+            }
 
-        .cards-de-caja img{
-            width: 200px;
-        }
+            .cards-de-caja img {
+                width: 200px;
+            }
 
-            .cards-de-caja h1{
+            .cards-de-caja h1 {
                 color: #F9EC10;
                 font-size: 2rem;
             }
 
-            .cards-de-caja p{
+            .cards-de-caja p {
                 color: #F1EFEF;
                 font-size: 1rem;
             }
+
+
+
         }
     </style>
 </head>
 
 <body>
-    <section class="caja-de-cards">
-        <div class="cards-de-caja">
-            <img src="/iconos-armamentos/plataformas blindadas/chaleco-b1.webp" alt="">
-            <h1>Aparejo blindado pesado Spartan C</h1>
-            <p>El chaleco antibalas militar de la serie de plataformas blindadas Spartan del 926. Un chaleco antibalas
-                pesado, proporciona la máxima defensa y es adecuado para cualquier tipo de combate.</p>
-        </div>
-    </section>
+    <div class="menu-toggle">
+        <span class="linea"></span>
+        <span class="linea"></span>
+        <span class="linea"></span>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+
+        menuToggle.addEventListener('click', function () {
+            menuToggle.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>
